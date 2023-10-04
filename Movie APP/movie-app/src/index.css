@@ -1,0 +1,13 @@
+body,html{
+  margin:0;
+  padding: 0;
+  background-color: rgb(24,24,24);
+  color: white;
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  height: 100%;
+
+}
+
+body{
+  padding-top: 70px;
+}

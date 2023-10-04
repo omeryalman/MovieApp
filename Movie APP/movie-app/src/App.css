@@ -1,0 +1,136 @@
+
+
+.movies-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 200px; 
+
+}
+.movies-list img{
+  max-height: 400px;
+}
+.movie-card{
+  position: relative;
+  cursor: pointer;
+}
+
+.searchBar{
+  display: flex;
+  width: 80%;
+  margin:20px 0;
+
+  margin-left: 10%;
+  padding: 10px;
+  font-size: 20px;
+
+}
+.movie-card:hover::before {
+  content: '+ Favorilere Ekle'; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 123, 255, 0.8); 
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0; 
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1; 
+}
+
+.movie-card:hover::before:hover {
+  opacity: 1; 
+  
+}
+
+nav{
+  display: flex;
+  height: 70px;
+  background-color: rgb(20, 20, 20);
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+nav img{
+display: flex;
+margin: 10px;
+}
+
+nav .link{
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  justify-content: space-between;
+}
+
+nav .link.active{
+color: white;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+footer{
+  display: flex;
+  font-size: 40px;  
+  width: 100%;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 768px){
+  nav img{
+
+    max-width: 80px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+
+    }
+    nav .link{
+      max-width: 20px;
+    }
+    .movies-list{
+      gap:100px
+    }
+  
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.pWrapper {
+  text-align: center;
+}
+
+
+button{
+  background: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.formInput{
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
